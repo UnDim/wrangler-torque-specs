@@ -1,9 +1,9 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "wrangler-torque-specs",
+  "version": "1.0.0",
+  "description": "A comprehensive searchable list of torque specifications for Jeep TJ, JK, JL, and JT.",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "main": "index.js",
   "scripts": {
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/UnDim/wrangler-torque-specs"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "wrangler",
+    "torque",
+    "specs"
   ],
   "license": "MIT"
 }

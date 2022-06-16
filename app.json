@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Node.js",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "name": "Wrangler Torque Specs",
+  "description": "A comprehensive searchable list of torque specifications for Jeep Wrangler TJ, JK, JL, and JT.",
+  "repository": "https://github.com/UnDim/wrangler-torque-specs",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
-  "keywords": ["node", "express", "heroku"],
+  "keywords": ["wrangler", "torque", "specs"],
   "image": "heroku/nodejs"
 }
