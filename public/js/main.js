@@ -178,6 +178,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   }
+  
+  // function get_selected_model() {
+    
+    // get references to select list and display text box
+    // var sel = document.getElementById('model-select');
+    // console.log (e.options[e.selectedIndex].text);
+  // };
 
   /**
    * Animation on scroll function and init
@@ -190,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mirror: false
     });
   }
+
   window.addEventListener('load', () => {
     aos_init();
   });
