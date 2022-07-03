@@ -4,5 +4,6 @@
   "repository": "https://github.com/UnDim/wrangler-torque-specs",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
   "keywords": ["wrangler", "torque", "specs"],
-  "image": "heroku/nodejs"
+  "image": "heroku/nodejs",
+  "stack": "heroku-22"
 }

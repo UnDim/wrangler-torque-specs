@@ -1,7 +1,7 @@
 <main id="main">
 
   <!-- ======= Why Choose Us Section ======= -->
-  <section id="why-us" class="why-us">
+  <section id="search" class="why-us">
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
@@ -67,20 +67,20 @@
               <p>Model</p>
               <select class="form-select" id="model-select" aria-label="Default select example">
                 <option selected>Select the Model</option>
-                <option value="1">TJ</option>
-                <option value="2">JK</option>
-                <option value="3">JL</option>
-                <option value="4">JT</option>
+                <option value="TJ">TJ</option>
+                <option value="JK">JK</option>
+                <option value="JL">JL</option>
+                <option value="JT">JT</option>
               </select>
             </div>
             <div class="col-lg-6">
               <p>Category</p>
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" id="category-select" aria-label="Default select example">
                 <option selected>Select the Category</option>
-                <option value="1">Brakes</option>
-                <option value="2">Frame</option>
-                <option value="3">Axle</option>
-                <option value="4">Suspension</option>
+                <option value="Brakes">Brakes</option>
+                <option value="Frame">Frame</option>
+                <option value="Axle">Axle</option>
+                <option value="Suspension">Suspension</option>
               </select>
             </div>
           </div>
@@ -90,6 +90,21 @@
     </div>
   </section><!-- End Call To Action Section -->
 </main><!-- End #main -->
+
+<script>
+  $(document).ready(function () {
+    var model = document.getElementById('model-select');
+    var selected_model = select.options[select.selectedIndex].text;
+    console.log(select_model);
+
+    var category = document.getElementById('category-select');
+    var selected_category = select.options[select.selectedIndex].text;
+    console.log(selected_category);
+    //console.log("ready");
+  });
+  
+</script>
+
 
 <!-- Scrollable modal -->
 <!-- Modal -->
