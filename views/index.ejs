@@ -4,9 +4,13 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+      <%- include ("./partials/navbar.ejs") %>
+    </header>
+    
+  <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
