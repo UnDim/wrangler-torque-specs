@@ -1,0 +1,57 @@
+<div class="bg-image"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+    <div class="container-fluid d-flex justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="/images/jeep.png" alt="Logo" width="40" height="40" class="me-2">
+        <span class="text-white">Jeep Torque Spec</span>
+      </a>
+      <div class="d-flex align-items-center">
+        <a href="#contact" class="text-white text-decoration-none me-3" title="Contact">
+          <i class="bi bi-envelope fs-4"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="centered-box">
+    <div class="card-box text-center">
+      <h3 class="mb-4">Search for Torque Specs</h3>
+      <form id="searchForm">
+        <div class="mb-3">
+          <label for="model" class="form-label">Model</label>
+          <select class="form-select" id="model">
+            <option selected disabled>Loading models...</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Search</button>
+      </form>
+      <!-- Search Result Modal -->
+      <div id="results" class="mt-4"></div>
+    </div>
+  </div>
+
+<script>
+  // Populate model dropdown from API
+  window.addEventListener('DOMContentLoaded', async () => {
+    const modelSelect = document.getElementById('model');
+
+    try {
+      const res = await fetch('http://127.0.0.1:5001/wrangler-torque-specs-366a2/us-central1/getGenerations');
+      const models = await res.json();
+
+      // Clear existing options
+      modelSelect.innerHTML = '<option selected disabled>Choose a model</option>';
+
+      // Populate the dropdown
+      models.forEach(model => {
+        const option = document.createElement('option');
+        option.value = model.name;
+        option.textContent = model.name;
+        modelSelect.appendChild(option);
+      });
+    } catch (error) {
+      modelSelect.innerHTML = '<option disabled>Error loading models</option>';
+      console.error('Failed to fetch models:', error);
+    }
+  });
+</script>
