@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ModelService, Model } from './model';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [FormsModule]
 })
 export class App {
   protected title = 'wrangler-torque-specs-366a2';
+  models: Model[] = [];
+  selectedModel: string = '';
 }
